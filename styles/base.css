@@ -1,0 +1,160 @@
+:root {
+    --textcolor: #232434;
+    --backgroundcolor: #edeeff;
+    --maincolor: #c2c2d7;
+    --accentcolor: #454555;
+    --lightbackground: #f4f4ff;
+    font-family: "Quicksand", sans-serif;
+}
+
+header {
+    display: block;
+    background-color: var(--maincolor);
+}
+
+#course-title {
+    display: block;
+    justify-self: center;
+    align-content: center;
+    color: var(--textcolor);
+    padding: 10px;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    background-color: var(--accentcolor);
+    font-size: 1.25rem;
+    padding: 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--backgroundcolor);
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    display: grid;
+    justify-content: space-around;
+    color: var(--textcolor);
+}
+
+h2 {
+    color: var(--textcolor);
+    display: grid;
+    justify-content: space-around;
+}
+
+main {
+    display: grid;
+    max-width: max-content;
+    grid-template-columns: 2fr, 1fr;
+    column-gap: 1rem;
+    justify-content: center;
+    background-color: var(--lightbackground);
+}
+
+h1 {
+    display: grid;
+    grid-column: span 4;
+}
+
+main .card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: var(--backgroundcolor);
+    color: var(--textcolor);
+    padding: 10px;
+}
+
+#about {
+    display: grid;
+    grid-column: 1/3;
+}
+
+#about h2,
+h3 {
+    grid-column: span 4;
+    justify-self: center;
+}
+
+#bio {
+    display: flex;
+    grid-column: span 4;
+}
+
+#bio p {
+    display: grid;
+    grid-column: span 2;
+    order: 1;
+    padding: 5px 20px;
+}
+
+#profile {
+    display: flex;
+    max-width: 150px;
+    order: 2;
+    padding: 5px 20px;
+}
+
+#state {
+    display: flex;
+    grid-column: span 4;
+    grid-template-rows: auto 1fr;
+}
+
+#state p {
+    display: grid;
+    grid-column: span 2;
+    order: 2;
+    padding: 5px 20px;
+}
+
+#flowers {
+    display: grid;
+    max-width: 100px;
+    padding: 25px 20px;
+    order: 1;
+}
+
+figcaption {
+    align-self: flex-end;
+    justify-self: center;
+}
+
+#resources {
+    display: grid;
+    grid-column: 3/4;
+}
+
+#resources h2 {
+    grid-column: span 3;
+}
+
+#resources ul {
+    grid-column: span 3;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+#resources li {
+    margin: 10px;
+}
+
+footer {
+    display: block;
+    background-color: var(--maincolor);
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    color: var(--textcolor);
+}

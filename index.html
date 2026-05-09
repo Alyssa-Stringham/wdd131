@@ -4,11 +4,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Alyssa Stringham</title>
+    <meta name="author" content="Alyssa Stringham" />
+    <meta name="description"
+        content="WDD 131 - Dynamic Web Fundamentals homepage for Alyssa Stringham. Additional keywords summary of page contnet to add later. " />
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdate.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>WDD 131 - Stringham</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/alyssa-stringham-467979206/">LinkedIn</a></li>
+                <li><a href="https://byupw.instructure.com/">Canvas</a></li>
+                <li><a
+                        href="https://www.churchofjesuschrist.org/study/scriptures/nt/john/14?lang=eng&id=p27#p27">Scripture</a>
+                </li>
+                <li><a href="#">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Alyssa Stringham</h1>
+        <!--all images in this class must be optimized and local; no external, absolute references to images-->
+        <section id="about" class="card">
+            <h2>About Me</h2>
+            <section id="bio">
+                <img src="images/picture-of-me.jpg" alt="Picture of Me" id="profile">
+                <p>My name is Alyssa Stringham. I've lived in Utah my entire life; I currently live at home with my
+                    parents,
+                    two of my three sisters, and our two dogs and two cats. I teach private horse riding lessons at a
+                    stable
+                    about 30 minutes from my house. We also board our horses there. </p>
+            </section>
+            <h3>Utah, United States of America</h3>
+            <section id="state">
+                <p>Utah became the 45th state in 1896. It is home to many state and national parks, forests, and
+                    monuments.
+                    Pando, a quaking aspen clone located in one of Utah's national forests, is considered the world's
+                    largest organism spanning 106 acres and weighing an estimated 13-million pounds. The world's largest
+                    natural rock span, Rainbow Bridge, is also located in Utah. Utah's state flower is the Sego Lily.
+                    Utah has an estimated population of 3.5 million people. It is the second-driest state in the nation,
+                    with an annual average rainfall of approximately 12 inches.</p>
+                <section id="stateflower">
+                    <img src="images/double-sego-lily.jpg" alt="Image of Sego Lillies" id="flowers">
+                    <figcaption>Sego Lilies</figcaption>
+                </section>
+
+            </section>
+        </section>
+        <section id="resources" class="card">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://squoosh.app/">Squoosh</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/">MDN</a></li>
+                <li><a href="https://www.geeksforgeeks.org/">Geeks for Geeks</a></li>
+                <li><a href="https://imagecolorpicker.com/">Image Color Picker</a></li>
+                <li><a href="https://mycolor.space/">Color Space</a></li>
+                <li><a href="https://fonts.google.com/">Google Fonts</a></li>
+
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> - Alyssa Stringham - Utah</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 
 </html>
