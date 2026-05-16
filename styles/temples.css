@@ -19,15 +19,16 @@ body {
 
 header {
     background-color: var(--blue);
-    border: solid var(--gold);
+    border-bottom: solid var(--gold);
     display: grid;
     grid-gap: 1rem;
-    padding: 10px;
+
 }
 
 header span {
     font-size: 2rem;
     font-weight: bold;
+    margin: 10px 30px;
 }
 
 nav {
@@ -41,6 +42,7 @@ nav {
     flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
+    padding: 10px;
 }
 
 #menu {
@@ -61,10 +63,11 @@ nav {
 
 .navigation a {
     display: none;
-    padding: 1rem;
     text-align: center;
     text-decoration: none;
     color: var(--fontColor);
+    font-size: larger;
+    padding: 10px 20px;
 }
 
 .navigation a:hover {
@@ -100,7 +103,7 @@ main figure {
     place-items: center;
 }
 
-#temple {
+img {
     height: 200px;
     border: solid var(--gold);
     margin: 10px;
@@ -109,7 +112,9 @@ main figure {
 
 footer {
     background-color: var(--blue);
-    border: solid var(--gold) 1px;
+    border-top: solid var(--gold) 2px;
     display: flex;
     justify-content: center;
+    padding: 10px;
+    margin: 20px 0 0 0;
 }
