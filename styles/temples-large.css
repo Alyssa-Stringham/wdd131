@@ -1,0 +1,33 @@
+@media (min-width: 480px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        font-size: larger;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+        color: var(--fontColor);
+        text-align: center;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-gap: 25px;
+        justify-content: center;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+}

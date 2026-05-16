@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: rgb(189, 212, 255);
+    --gold: rgb(217, 202, 147);
+    --gray: rgb(214, 221, 227);
+    --fontColor: rgb(60, 60, 70);
+    font-family: "Beau Rivage";
+}
+
+body {
+    background-color: var(--gray);
+    color: var(--fontColor);
+}
+
+header {
+    background-color: var(--blue);
+    border: solid var(--gold);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 10px;
+    grid-gap: 1px;
+}
+
+.navigation {
+    max-width: 850px;
+    margin: 1rem auto;
+}
+
+#menu {
+    font-size: 1.5rem;
+    background: none;
+    text-decoration: none;
+}
+
+#menu::before {
+    content: "≡";
+    color: var(--fontColor);
+}
+
+#menu.open::before {
+    content: "X";
+    color: var(--fontColor);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    background-color: var(--blue);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--fontColor);
+}
+
+.navigation a:hover {
+    text-decoration: underline 1px;
+    text-decoration-color: var(--fontColor);
+    color: var(--fontColor);
+}
+
+.open a {
+    display: block;
+    color: var(--fontColor);
+}
+
+
+main {
+    display: grid;
+    max-width: 850px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+    place-items: center;
+}
+
+main h1 {
+    display: grid;
+    grid-column: 1 / -1;
+    text-align: center;
+    margin: 20px;
+}
+
+main figure {
+    display: grid;
+    place-items: center;
+}
+
+#temple {
+    width: 200px;
+    border: solid var(--gold);
+}
+
+footer {
+
+    background-color: var(--blue);
+    border: solid var(--gold) 1px;
+    display: flex;
+    justify-content: center;
+}
