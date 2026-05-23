@@ -20,31 +20,33 @@
     <header>
         <span id="title">France</span>
     </header>
-    <div class="hero">
-        <picture>
-            <source srcset="images/french-pastries.webp" media="(min-width:750px)" alt="French Pastries">
-            <img src="images/eiffel-tower.webp" alt="Eiffel Tower">
-        </picture>
-    </div>
-    <section class="data">
-        <h1>Data</h1>
-        <p><span class="item">Area: </span><span class="value">632,734 km<sup>2</sup></span></p>
-        <p><span class="item">Population: </span><span class="value">68,551,653</span>
-        <p><span class="item">Capital: </span><span class="value">Paris</span></p>
-        <p><span class="item">Languages: </span><span class="value">French</span></p>
-        <p><span class="item">Currency: </span><span class="value">Euro</span></p>
-        <p><span class="item">Time Zone: </span><span class="value">CET</span></p>
-        <p><span class="item">Calling Code: </span><span class="value">+33</span></p>
-        <p><span class="item">Internet TLD: </span><span class="value">.fr</span></p>
-    </section>
-    <section class="weather">
-        <h1>Weather </h1>
-        <img src=images/weather.svg alt="weather icon">
-        <p><span class="item">Temperature: </span><span class="value">10 &deg;C</span></p>
-        <p><span class="item">Conditions: </span><span class="value">Partly Cloudy</span></p>
-        <p><span class="item">Wind: </span><span class="value">9 kph</span></p>
-        <p><span class="item">Wind Chill: </span><span class="value"><span id="windChill"></span></span></p>
-    </section>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/french-pastries.webp" media="(min-width:750px)">
+                <img src="images/french-pastries-small.webp" alt="French Pastries">
+            </picture>
+        </div>
+        <section class="data">
+            <h1>Data</h1>
+            <p><span class="item">Area: </span><span class="value">632,734 km<sup>2</sup></span></p>
+            <p><span class="item">Population: </span><span class="value">68,551,653</span>
+            <p><span class="item">Capital: </span><span class="value">Paris</span></p>
+            <p><span class="item">Languages: </span><span class="value">French</span></p>
+            <p><span class="item">Currency: </span><span class="value">Euro</span></p>
+            <p><span class="item">Time Zone: </span><span class="value">CET</span></p>
+            <p><span class="item">Calling Code: </span><span class="value">+33</span></p>
+            <p><span class="item">Internet TLD: </span><span class="value">.fr</span></p>
+        </section>
+        <section class="weather">
+            <h1>Weather </h1>
+            <img src=images/weather.svg alt="weather icon">
+            <p><span class="item">Temperature: </span><span class="value">10 &deg;C</span></p>
+            <p><span class="item">Conditions: </span><span class="value">Partly Cloudy</span></p>
+            <p><span class="item">Wind: </span><span class="value">9 kph</span></p>
+            <p><span class="item">Wind Chill: </span><span class="value"><span id="windChill"></span></span></p>
+        </section>
+    </main>
     <footer>
         <p> &copy; <span id="currentyear"></span> . Alyssa Stringham France </p>
         <p id="lastModified"></p>
