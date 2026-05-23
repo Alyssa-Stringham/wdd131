@@ -1,0 +1,131 @@
+:root {
+    --blue: rgba(0, 37, 81);
+    --red: rgba(200, 16, 37);
+    background-color: var(--blue);
+    font-family: "Caudex", serif;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+header {
+    display: block;
+    background-color: var(--blue);
+    border-bottom: solid var(--red);
+}
+
+#title {
+    display: block;
+    justify-self: center;
+    align-content: center;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.weather img {
+    height: 75px;
+    align-self: center;
+}
+
+h1 {
+    align-self: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    padding-bottom: 10px;
+    color: var(--blue);
+}
+
+section p {
+    display: flex;
+    align-items: baseline;
+    margin: 5px;
+}
+
+.weather {
+    border-bottom: solid var(--red);
+}
+
+.data {
+    border-top: solid var(--red);
+}
+
+.item {
+    flex: 1;
+    text-align: right;
+    padding-right: 3px;
+    font-weight: 700;
+}
+
+.value {
+    flex: 1;
+    text-align: left;
+    padding-left: 3px;
+}
+
+footer {
+    background-color: var(--blue);
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media only screen and (min-width:750px) {
+    h1 {
+        background-color: var(--blue);
+        color: white;
+        border-bottom: solid var(--red);
+        align-self: flex-start;
+        margin: 5px 0;
+        font-size: 1.5rem;
+        width: 200px;
+    }
+
+    body {
+        position: relative;
+        display: inline-block;
+    }
+
+    section {
+        background-color: rgba(219, 215, 215, 0.85);
+        width: 250px;
+        height: fit-content;
+        padding-bottom: 10px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 20%;
+        right: 2%;
+        border-bottom: none;
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .weather h1::after {
+        content: "⛅";
+    }
+
+    .data {
+        position: absolute;
+        top: 12%;
+        left: 2%;
+        border-top: none;
+    }
+}
