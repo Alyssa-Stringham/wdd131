@@ -1,6 +1,8 @@
 :root {
     --blue: rgba(0, 37, 81);
     --red: rgba(200, 16, 37);
+    --white: white;
+    --box-background: rgba(219, 215, 215, 0.85);
     background-color: var(--blue);
     font-family: "Caudex", serif;
 }
@@ -20,7 +22,7 @@ header {
     display: block;
     justify-self: center;
     align-content: center;
-    color: white;
+    color: var(--white);
     padding: 10px;
     font-weight: 700;
 
@@ -39,7 +41,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: white;
+    background-color: var(--white);
     padding-bottom: 10px;
     color: var(--blue);
 }
@@ -73,7 +75,7 @@ section p {
 
 footer {
     background-color: var(--blue);
-    color: white;
+    color: var(--white);
     display: block;
     padding: 10px;
 }
@@ -87,7 +89,7 @@ footer p {
 @media only screen and (min-width:750px) {
     h2 {
         background-color: var(--blue);
-        color: white;
+        color: var(--white);
         border-bottom: solid var(--red);
         align-self: flex-start;
         margin: 5px 0;
@@ -101,7 +103,7 @@ footer p {
     }
 
     section {
-        background-color: rgba(219, 215, 215, 0.85);
+        background-color: var(--box-background);
         width: 250px;
         height: fit-content;
         padding-bottom: 10px;
