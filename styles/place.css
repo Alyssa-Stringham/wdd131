@@ -23,7 +23,7 @@ header {
     color: white;
     padding: 10px;
     font-weight: 700;
-    font-size: 2rem;
+
 }
 
 .weather img {
@@ -31,7 +31,7 @@ header {
     align-self: center;
 }
 
-h1 {
+h2 {
     align-self: center;
 }
 
@@ -85,7 +85,7 @@ footer p {
 
 
 @media only screen and (min-width:750px) {
-    h1 {
+    h2 {
         background-color: var(--blue);
         color: white;
         border-bottom: solid var(--red);
@@ -95,7 +95,7 @@ footer p {
         width: 200px;
     }
 
-    body {
+    main {
         position: relative;
         display: inline-block;
     }
@@ -109,7 +109,7 @@ footer p {
 
     .weather {
         position: absolute;
-        bottom: 20%;
+        bottom: 5%;
         right: 2%;
         border-bottom: none;
     }
@@ -118,13 +118,13 @@ footer p {
         display: none;
     }
 
-    .weather h1::after {
+    .weather h2::after {
         content: "⛅";
     }
 
     .data {
         position: absolute;
-        top: 12%;
+        top: 5%;
         left: 2%;
         border-top: none;
     }
