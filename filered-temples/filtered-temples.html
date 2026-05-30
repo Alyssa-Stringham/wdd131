@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alyssa Stringham">
+    <meta name="description" content="UPDATE a temple photo album containing 9 temple pictures with dynamic display.">
+    <title>Filered Temples Activity</title>
+    <link rel="stylesheet" href="filtered-temples.css">
+    <script src="filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <span>Temple Album</span>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" class="nav-link" id="home" data-title="Home">Home</a></li>
+                <li><a href="#" class="nav-link" id="old" data-title="Old Temples">Old</a></li>
+                <li><a href="#" class="nav-link" id="new" data-title="New Temples">New</a></li>
+                <li><a href="#" class="nav-link" id="large" data-title="Large Temples">Large</a></li>
+                <li><a href="#" class="nav-link" id="small" data-title="Small Temples">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 id="mainHeader">Home</h1>
+        <div class="temple-grid"></div>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> - Alyssa Stringham - Utah -</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

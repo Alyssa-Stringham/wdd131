@@ -1,0 +1,51 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --darkGray: rgb(75, 75, 75);
+    --medGray: rgb(150, 150, 150);
+    --lightGray: rgb(225, 225, 225);
+    --white: rgb(255, 255, 255);
+}
+
+
+table {
+    border-collapse: collapse;
+
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--black);
+}
+
+tbody {
+    border-collapse: collapse;
+}
+
+tr:first-child th {
+    color: var(--white);
+}
+
+th,
+td {
+    padding: 7px 15px;
+    text-align: center;
+}
+
+th:first-child {
+    background-color: var(--black);
+}
+
+th {
+    background-color: var(--darkGray);
+    color: white;
+}
+
+td,
+not:first-child {
+    border: 1px solid var(--medGray);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--lightGray);
+}
