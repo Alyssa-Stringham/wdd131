@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Product Review Form</title>
+</head>
+
+<body>
+    <header>Product Review</header>
+    <main>
+        <form method="get" action="review.html">
+            <select id="select" name="select" required>
+                <option selected disabled>Select a Product...</option>
+            </select>
+            <div>Overall Rating</div>
+            <label><input type="radio" id="radio" name="radio" required></label>
+            <label><input type="radio" id="radio" name="radio" required></label>
+            <label><input type="radio" id="radio" name="radio" required></label>
+            <label><input type="radio" id="radio" name="radio" required></label>
+            <label><input type="radio" id="radio" name="radio" required></label>
+            <div>Date of Installation</div>
+            <label><input type="date" id="date" name="date" required></label>
+            <div>Useful Features</div>
+            <label><input type="checkbox" id="checkbox" name="checkbox" value="yes">Feature 1</label>
+            <label><input type="checkbox" id="checkbox" name="checkbox" value="yes">Feature 2</label>
+            <label><input type="checkbox" id="checkbox" name="checkbox" value="yes">Feature 3</label>
+            <div>Written Review (optional)</div>
+            <label><input type="textbox" id="review" name="review"></label>
+            <div>Your Name (optional)</div>
+            <label><input type="text" id="fname" name="fname"></label>
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>

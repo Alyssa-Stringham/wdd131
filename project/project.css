@@ -1,0 +1,89 @@
+:root {
+    --Blue: #2f71aa;
+    --Gray: #1e1926;
+    --lightBlue: #daf3ff;
+    --Gold: #df9f1f;
+    --veryLightBlue: #effaff;
+    font-family: "Texturina",
+        serif;
+    background-color: var(--lightBlue);
+    display: grid;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-gap: 5px;
+    justify-content: center;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+p {
+    color: var(--Gray);
+    padding: 10px;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+h1 {
+    display: grid;
+    color: var(--veryLightBlue);
+    background-color: var(--Blue);
+    font-weight: 500;
+    font-size: 2.5rem;
+    padding: 5px 0 10px 0;
+    text-align: center;
+    grid-column: span 3;
+    margin: 0;
+}
+
+h2 {
+    color: var(--veryLightBlue);
+    background-color: var(--Blue);
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#purpose {
+    grid-column: span 3;
+}
+
+#heading {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+#subheading {
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+#bodyText {
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+#vocab {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.5rem;
+}
+
+img {
+    border: var(--Gold) double 7px;
+    width: 400px;
+}
+
+#wire {
+    grid-column: span 3;
+}
+
+#wire div {
+    justify-self: center;
+}
+
+#name {
+    grid-column: span 3;
+    margin: 0 auto 0;
+}

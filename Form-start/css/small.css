@@ -1,0 +1,162 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #ddd;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #666;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    border-bottom: solid 1px #333;
+}
+
+nav ul li a {
+    display: block;
+    background-color: #444;
+    color: #eee;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background-color: #000;
+    color: #fff;
+}
+
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+/*----------- Form Styling -----------*/
+.wf1 fieldset {
+    margin: 2rem 0;
+    /* moves sections away from eachother*/
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    /* provides space inside fieldset*/
+}
+
+.wf1 legend {
+    color: #445ba9;
+    /*create more space between section title and section border on sides*/
+    padding: 0 .5rem;
+}
+
+.wf1 label {
+    /*change from inline to block so they are on multiple lines*/
+    display: block;
+    padding-top: 1rem;
+    color: #9c2c13;
+    font-size: .9rem;
+}
+
+/*style course information subheadings */
+.wf1 div {
+    padding-top: 1rem;
+    color: #445ba9;
+    font-size: .9rem;
+}
+
+/*best practice - user intrustions top left relative to user input - display: block;*/
+.wf1 input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="url"],
+input[type="date"],
+select,
+input[type="number"] {
+    background-color: #eee;
+    display: block;
+    border: solid 1px #999;
+    border-radius: 6px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+    /*override default browser styling; also removes down arrow for drop-down; add back in html*/
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+
+.wf1 input[type="submit"] {
+    /*Example
+    border: none;
+    background-image: linear-gradient(#9c2c13, #6f200e);
+    color: white;
+    border-radius: 6px;
+    padding: .8rem;
+    */
+    padding: .8rem;
+    width: 96%;
+    max-width: 400px;
+    /* -1rem removes space above button 2% right 2rem adds space between footer 2% left
+    2% + 2% + 96% (width above) = 100%*/
+    margin: -1rem 2% 2rem 2%;
+    box-shadow: 1px 1px 4px #999;
+}
+
+
+/*style required sections*/
+.wf1 input:required {
+    border-bottom: solid 5px #9c2c13;
+}
+
+.wf1 input:required:valid {
+    border-bottom: solid 5px green;
+}
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}
