@@ -64,7 +64,7 @@
 
  #reviewForm input[type="text"],
  #reviewForm input[type="date"],
- #reviewForm input[type="textarea"] {
+ #reviewForm textarea {
      background-color: #f0f8ff;
      border: solid 1px #384955;
      padding: .5rem;
@@ -149,4 +149,16 @@
      display: flex;
      justify-content: center;
      background-color: #c3def4;
+ }
+
+ @media only screen and (min-width:800px) {
+
+     header,
+     main,
+     footer {
+         width: 100%;
+         margin: 0 auto;
+         display: block;
+         text-align: center;
+     }
  }

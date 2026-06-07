@@ -21,7 +21,7 @@
                 <legend>Required</legend>
                 <label for="product">Product Name</label>
                 <select id="product" name="product" required>
-                    <option selected disabled>Select a Product...</option>
+                    <option value="" selected disabled>Select a Product...</option>
                     <!--additional options created dynamically using provided product array; each must have value attribue that is the product name-->
                 </select>
                 <label>Overall Rating</label>
@@ -47,7 +47,7 @@
                         id="materials">
                 </div>
 
-                <label for="review">Written Review </label> <input type="textarea" id="review" name="review">
+                <label for="review">Written Review </label> <textarea id="review" name="review"></textarea>
                 <label for="fname">Your Name </label><input type="text" id="fname" name="fname">
             </fieldset>
             <input type="submit" value="Post Review">
