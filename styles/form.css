@@ -64,7 +64,7 @@
 
  #reviewForm input[type="text"],
  #reviewForm input[type="date"],
- #reviewForm input[type="textbox"] {
+ #reviewForm input[type="textarea"] {
      background-color: #f0f8ff;
      border: solid 1px #384955;
      padding: .5rem;
@@ -77,6 +77,7 @@
  #feature {
      color: #50606e;
      padding-right: 5px;
+
  }
 
  input {
@@ -86,6 +87,7 @@
  input [type="checkbox"] {
      margin-left: 5px;
      color: #50606e;
+
  }
 
  input[type="radio"] {

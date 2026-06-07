@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alyssa Stringham">
+    <meta name="description"
+        content="an html form for a product review which contains a drop-down selection for products, a rating system, a date of installation, and options for useful features, written reviews, and user name.">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
@@ -29,16 +32,21 @@
                     <input type="radio" id="2star" name="stars" value="2" required><label for="2star"></label>
                     <input type="radio" id="1star" name="stars" value="1" required><label for="1star"></label>
                 </div>
-                <label>Date of Installation<input type="date" id="date" name="date" required></label>
+                <label for="date">Date of Installation</label><input type="date" id="date" name="date" required>
             </fieldset>
             <fieldset>
                 <legend>Optional</legend>
                 <label>Useful Features</label>
-                <label id="feature"><input type="checkbox" id="feature" name="feature" value="yes">Quality</label>
-                <label id="feature"><input type="checkbox" id="feature" name="feature" value="yes">Durability</label>
-                <label id="feature"><input type="checkbox" id="feature" name="feature" value="yes">Performance</label>
-                <label>Written Review (optional) <input type="textbox" id="review" name="review"></label>
-                <label>Your Name (optional) <input type="text" id="fname" name="fname"></label>
+                <label id="feature" for="quality">Quality</label><input type="checkbox" id="feature" name="quality"
+                    value="yes">
+                <label id="feature" for="durability">Durability</label><input type="checkbox" id="feature"
+                    name="durability" value="yes">
+                <label id="feature" for="performance">Performance</label><input type="checkbox" id="feature"
+                    name="performance" value="yes">
+                <label id="feature" for="materials">Materials</label><input type="checkbox" id="feature"
+                    name="materials" value="yes">
+                <label for="review">Written Review </label> <input type="textarea" id="review" name="review">
+                <label for="fname">Your Name </label><input type="text" id="fname" name="fname">
             </fieldset>
             <input type="submit" value="Post Review">
         </form>
