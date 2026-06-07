@@ -1,0 +1,148 @@
+ html {
+     -webkit-text-size-adjust: 100%;
+     -ms-text-size-adjust: 100%;
+ }
+
+ * {
+     -moz-box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+
+ }
+
+ header,
+ body {
+     background-color: rgb(240, 248, 255);
+ }
+
+ header {
+     background-color: #c3def4;
+     font-size: 1.75rem;
+     color: #384955;
+     width: 100%;
+     max-width: 400px;
+     margin: 0 auto;
+     display: block;
+     text-align: center;
+     padding: 5px;
+ }
+
+ main {
+     display: block;
+     width: 100%;
+     max-width: 400px;
+     margin: 0 auto;
+
+ }
+
+ .reviewForm {
+     display: block;
+     max-width: 400px;
+     color: #384955;
+     padding: 5px;
+     background-color: white;
+ }
+
+ .reviewForm fieldset {
+     margin: 2rem 0;
+     border: solid 1px rgb(128, 128, 128);
+     padding: .5rem 2%;
+     background-color: white;
+ }
+
+ .reviewForm label {
+     display: block;
+     padding: 5px;
+     color: #384955;
+     margin-top: 5px;
+     background-color: white;
+ }
+
+ .reviewForm select {
+     font-size: 1rem;
+ }
+
+ .reviewForm input[type="text"],
+ .reviewForm input[type="date"],
+ .reviewForm input[type="textbox"] {
+     background-color: #f0f8ff;
+     border: solid 1px #384955;
+     padding: .5rem;
+     width: 100%;
+     max-width: 400px;
+     appearance: none;
+     display: block;
+ }
+
+ #feature {
+     color: #50606e;
+     display: flex;
+     padding-right: 5px;
+ }
+
+ input {
+     color: #50606e;
+ }
+
+ input [type="checkbox"] {
+     margin-left: 5px;
+     color: #50606e;
+ }
+
+ input[type="radio"] {
+     display: none;
+     position: relative;
+ }
+
+ legend {
+     background-color: white;
+ }
+
+ .stars {
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: left;
+     background-color: white;
+ }
+
+ .stars>label {
+     color: #e99a27;
+     width: 30px;
+     height: 30px;
+     font-size: 2rem;
+     margin-left: 5px;
+     display: flex;
+     align-items: center;
+     margin-bottom: 10px;
+ }
+
+ .stars label::before {
+     content: "\2606";
+ }
+
+ .stars input:checked~label:before {
+     content: "\2605";
+ }
+
+ input[type="submit"] {
+     display: flex;
+     background-color: #c3def4;
+     border-color: #50606e;
+     color: #50606e;
+     justify-self: center;
+     margin: 5px;
+     font-size: 1rem;
+ }
+
+ footer {
+     display: block;
+     background-color: #c3def4;
+     color: #384955;
+ }
+
+ footer p {
+     display: flex;
+     justify-content: center;
+     background-color: #c3def4;
+ }

@@ -6,36 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
     <title>Product Review Form</title>
 </head>
 
 <body>
     <header>Product Review</header>
     <main>
-        <form method="get" action="review.html">
-            <select id="select" name="select" required>
-                <option selected disabled>Select a Product...</option>
-            </select>
-            <div>Overall Rating</div>
-            <label><input type="radio" id="radio" name="radio" required></label>
-            <label><input type="radio" id="radio" name="radio" required></label>
-            <label><input type="radio" id="radio" name="radio" required></label>
-            <label><input type="radio" id="radio" name="radio" required></label>
-            <label><input type="radio" id="radio" name="radio" required></label>
-            <div>Date of Installation</div>
-            <label><input type="date" id="date" name="date" required></label>
-            <div>Useful Features</div>
-            <label><input type="checkbox" id="checkbox" name="checkbox" value="yes">Feature 1</label>
-            <label><input type="checkbox" id="checkbox" name="checkbox" value="yes">Feature 2</label>
-            <label><input type="checkbox" id="checkbox" name="checkbox" value="yes">Feature 3</label>
-            <div>Written Review (optional)</div>
-            <label><input type="textbox" id="review" name="review"></label>
-            <div>Your Name (optional)</div>
-            <label><input type="text" id="fname" name="fname"></label>
+        <form method="get" action="review.html" id="reviewForm" class="reviewForm">
+            <fieldset>
+                <legend>Required</legend>
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option selected disabled>Select a Product...</option>
+                    <!--additional options created dynamically using provided product array; each must have value attribue that is the product name-->
+                </select>
+                <label>Overall Rating</label>
+                <div class="stars">
+                    <input type="radio" id="5star" name="stars" value="5" required><label for="5star"></label>
+                    <input type="radio" id="4star" name="stars" value="4" required><label for="4star"></label>
+                    <input type="radio" id="3star" name="stars" value="3" required><label for="3star"></label>
+                    <input type="radio" id="2star" name="stars" value="2" required><label for="2star"></label>
+                    <input type="radio" id="1star" name="stars" value="1" required><label for="1star"></label>
+                </div>
+                <label>Date of Installation<input type="date" id="date" name="date" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Optional</legend>
+                <label>Useful Features</label>
+                <label id="feature"><input type="checkbox" id="feature" name="feature" value="yes">Quality</label>
+                <label id="feature"><input type="checkbox" id="feature" name="feature" value="yes">Durability</label>
+                <label id="feature"><input type="checkbox" id="feature" name="feature" value="yes">Performance</label>
+                <label>Written Review (optional) <input type="textbox" id="review" name="review"></label>
+                <label>Your Name (optional) <input type="text" id="fname" name="fname"></label>
+            </fieldset>
             <input type="submit" value="Post Review">
         </form>
     </main>
-    <footer></footer>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> - Alyssa Stringham - Utah -</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 
