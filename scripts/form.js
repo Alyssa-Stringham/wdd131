@@ -50,9 +50,8 @@ products.forEach(product => {
     selectProduct.appendChild(option);
 });
 
-let numReviews = parseInt(localStorage.getItem(numReviews)) || 0;
+let numReviews = parseInt(localStorage.getItem("numReviews")) || 0;
 localStorage.setItem("numReviews", numReviews + 1);
-
 
 // use local storage and track number of reviews completed
 // each time review.html page loads successfully after form submission, increment counter by 1
