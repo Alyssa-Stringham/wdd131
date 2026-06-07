@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Alyssa Stringham">
     <meta name="description"
-        content="an html form for a product review which contains a drop-down selection for products, a rating system, a date of installation, and options for useful features, written reviews, and user name.">
+        content="an html form for a product review which contains both required and optional form elements">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
@@ -37,14 +37,16 @@
             <fieldset>
                 <legend>Optional</legend>
                 <label>Useful Features</label>
-                <label id="feature" for="quality">Quality</label><input type="checkbox" id="feature" name="quality"
-                    value="yes">
-                <label id="feature" for="durability">Durability</label><input type="checkbox" id="feature"
-                    name="durability" value="yes">
-                <label id="feature" for="performance">Performance</label><input type="checkbox" id="feature"
-                    name="performance" value="yes">
-                <label id="feature" for="materials">Materials</label><input type="checkbox" id="feature"
-                    name="materials" value="yes">
+                <div id="feature">
+                    <label for="quality">Quality</label><input type="checkbox" name="quality" value="yes" id="quality">
+                    <label for="durability">Durability</label><input type="checkbox" name="durability" value="yes"
+                        id="durability">
+                    <label for="performance">Performance</label><input type="checkbox" name="performance" value="yes"
+                        id="performance">
+                    <label for="materials">Materials</label><input type="checkbox" name="materials" value="yes"
+                        id="materials">
+                </div>
+
                 <label for="review">Written Review </label> <input type="textarea" id="review" name="review">
                 <label for="fname">Your Name </label><input type="text" id="fname" name="fname">
             </fieldset>
