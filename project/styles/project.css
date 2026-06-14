@@ -1,21 +1,18 @@
 :root {
-    --blue: #2f71aa;
+    --purple: #4b0a57;
     --Gray: #1e1926;
-    --lightBlue: #daf3ff;
-    --Gold: #df9f1f;
-    --veryLightBlue: #effaff;
+    --lightPurple: #FFF6FF;
+    --Gold: #fdb951;
     font-family: "Texturina",
         serif;
-    background-color: var(--lightBlue);
+    background-color: var(--lightPurple);
     display: grid;
 }
 
-/*Don't forget to add additional rules for different screen sizes*/
-
 footer {
     display: block;
-    background-color: var(--blue);
-    color: var(--veryLightBlue);
+    background-color: var(--purple);
+    color: white;
     padding: 3px;
     margin-top: 2rem;
 }
@@ -44,10 +41,11 @@ h2 {
     margin: 0 auto;
     border: 3px double var(--Gold);
     padding: 20px;
+    background-color: white;
 }
 
 .message legend {
-    color: var(--blue);
+    color: var(--purple);
     margin-top: 20px;
     text-decoration: underline;
 }
@@ -61,8 +59,7 @@ input[type="tel"],
 input[type="email"],
 .message textarea {
     display: block;
-
-    border: solid 1px var(--lightBlue);
+    border: solid 1px var(--purple);
     width: 100%;
 }
 
@@ -76,7 +73,7 @@ input[type="email"],
 }
 
 .message input:required {
-    border-bottom: solid var(--blue) 3px;
+    border-bottom: solid var(--purple) 3px;
 }
 
 .vocabulary h3,
@@ -143,6 +140,7 @@ input[type="email"],
 
 .aboutDres img {
     width: 100%;
+    height: auto;
 }
 
 .aboutDres figure {
@@ -171,8 +169,8 @@ input[type="email"],
 
 header {
     display: grid;
-    background-color: var(--blue);
-    color: var(--veryLightBlue);
+    background-color: var(--purple);
+    color: white;
 }
 
 nav {
@@ -193,13 +191,13 @@ nav {
     display: none;
     text-align: center;
     text-decoration: none;
-    color: var(--veryLightBlue);
-    background-color: var(--blue);
+    color: white;
+    background-color: var(--purple);
     padding: 10px 20px;
 }
 
 #menu {
-    background-color: var(--blue);
+    background-color: var(--purple);
     text-decoration: none;
     font-size: 1.5rem;
 }
@@ -207,17 +205,17 @@ nav {
 #menu::before {
     content: "≡";
     padding-left: 15px;
-    color: var(--veryLightBlue);
+    color: white;
 }
 
 #menu.open::before {
     content: "X";
-    color: var(--veryLightBlue);
+    color: white;
 }
 
 .open a {
     display: block;
-    color: var(--veryLightBlue);
+    color: white;
     margin: 0;
 }
 
@@ -234,11 +232,20 @@ nav {
     font-size: larger;
 }
 
+#ref {
+    text-decoration: none;
+    color: white;
+}
+
+#ref:hover {
+    text-decoration: underline;
+}
+
 @media screen and (min-width: 400px) {
     header {
         display: block;
-        background-color: var(--blue);
-        color: var(--veryLightBlue);
+        background-color: var(--purple);
+        color: white;
         width: 100%;
     }
 
@@ -270,7 +277,7 @@ nav {
         flex: 1 1 100%;
         text-align: center;
         text-decoration: none;
-        color: var(--veryLightBlue);
+        color: white;
     }
 
     .levels section {
