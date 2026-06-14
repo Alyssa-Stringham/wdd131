@@ -1,5 +1,5 @@
 :root {
-    --Blue: #2f71aa;
+    --blue: #2f71aa;
     --Gray: #1e1926;
     --lightBlue: #daf3ff;
     --Gold: #df9f1f;
@@ -10,80 +10,340 @@
     display: grid;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 5px;
-    justify-content: center;
-    max-width: 950px;
-    margin: 0 auto;
-}
+/*Don't forget to add additional rules for different screen sizes*/
 
-p {
-    color: var(--Gray);
-    padding: 10px;
-    font-size: 1.25rem;
-    margin: 0;
-}
-
-h1 {
-    display: grid;
+footer {
+    display: block;
+    background-color: var(--blue);
     color: var(--veryLightBlue);
-    background-color: var(--Blue);
-    font-weight: 500;
-    font-size: 2.5rem;
-    padding: 5px 0 10px 0;
-    text-align: center;
-    grid-column: span 3;
-    margin: 0;
+    padding: 3px;
+    margin-top: 2rem;
 }
 
-h2 {
-    color: var(--veryLightBlue);
-    background-color: var(--Blue);
-    font-size: 1.75rem;
-    text-align: center;
-}
-
-#purpose {
-    grid-column: span 3;
-}
-
-#heading {
-    font-weight: 500;
-    font-size: 2.5rem;
-}
-
-#subheading {
-    font-weight: 500;
-    font-size: 1.75rem;
-}
-
-#bodyText {
-    font-weight: 400;
-    font-size: 1.25rem;
-}
-
-#vocab {
-    font-weight: 200;
-    font-style: italic;
-    font-size: 1.5rem;
-}
-
-img {
-    border: var(--Gold) double 7px;
-    width: 400px;
-}
-
-#wire {
-    grid-column: span 3;
-}
-
-#wire div {
+footer p {
+    display: block;
     justify-self: center;
 }
 
-#name {
-    grid-column: span 3;
-    margin: 0 auto 0;
+img {
+    border: 5px ridge var(--Gold);
+    margin: 5px;
+}
+
+main {
+    min-height: 400px;
+}
+
+h2 {
+    display: block;
+    justify-self: center;
+}
+
+.message {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 3px double var(--Gold);
+    padding: 20px;
+}
+
+.message legend {
+    color: var(--blue);
+    margin-top: 20px;
+    text-decoration: underline;
+}
+
+.message label {
+    color: var(--Gray);
+}
+
+.message input[type="text"],
+input[type="tel"],
+input[type="email"],
+.message textarea {
+    display: block;
+
+    border: solid 1px var(--lightBlue);
+    width: 100%;
+}
+
+.message input[type="submit"] {
+    max-width: 400px;
+    width: 60%;
+    display: flex;
+    justify-self: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.message input:required {
+    border-bottom: solid var(--blue) 3px;
+}
+
+.vocabulary h3,
+.vocabulary p {
+    margin: 10px;
+}
+
+.levels h2 {
+    text-align: center;
+}
+
+.levles h3 {
+    margin-bottom: 5px;
+}
+
+.levels p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.levels section {
+    display: grid;
+    place-items: center;
+    grid-gap: 25px;
+    width: 300px;
+    align-items: start;
+}
+
+.imgSec {
+    display: grid;
+    place-items: center;
+    grid-gap: 20px;
+}
+
+.levels figure {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.levels img {
+    height: 300px;
+    margin: 10px;
+}
+
+.levels figcaption {
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+.aboutDres section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.modern {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.aboutDres img {
+    width: 100%;
+}
+
+.aboutDres figure {
+    display: table;
+    margin: 0;
+}
+
+.aboutDres figcaption {
+    text-align: center;
+    display: table-caption;
+    caption-side: bottom;
+    font-size: smaller;
+}
+
+.aboutWeb {
+    padding: 10px;
+}
+
+.vocab {
+    margin: 10px;
+}
+
+.vocab h3 {
+    font-style: italic;
+}
+
+header {
+    display: grid;
+    background-color: var(--blue);
+    color: var(--veryLightBlue);
+}
+
+nav {
+    display: flex;
+}
+
+.navigation {
+    max-width: 850px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 10px;
+}
+
+.navigation a {
+    display: none;
+    text-align: center;
+    text-decoration: none;
+    color: var(--veryLightBlue);
+    background-color: var(--blue);
+    padding: 10px 20px;
+}
+
+#menu {
+    background-color: var(--blue);
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+#menu::before {
+    content: "≡";
+    padding-left: 15px;
+    color: var(--veryLightBlue);
+}
+
+#menu.open::before {
+    content: "X";
+    color: var(--veryLightBlue);
+}
+
+.open a {
+    display: block;
+    color: var(--veryLightBlue);
+    margin: 0;
+}
+
+.navigation a:hover {
+    text-decoration: underline;
+}
+
+#submitCount {
+    display: none;
+}
+
+.sent {
+    text-align: center;
+    font-size: larger;
+}
+
+@media screen and (min-width: 400px) {
+    header {
+        display: block;
+        background-color: var(--blue);
+        color: var(--veryLightBlue);
+        width: 100%;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    h1 {
+        display: block;
+        justify-self: center;
+    }
+
+    .navigation {
+        border-top: 1px solid var(--Gold);
+        border-bottom: 1px solid var(--Gold);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: larger;
+        align-items: center;
+        list-style: none;
+        padding: 5px;
+        width: 100%;
+    }
+
+    .navigation a {
+        padding: 5px;
+        display: block;
+        flex: 1 1 100%;
+        text-align: center;
+        text-decoration: none;
+        color: var(--veryLightBlue);
+    }
+
+    .levels section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+    }
+
+    .imgSec {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    .levels figure {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+    }
+
+    .levels img {
+        height: 350px;
+        width: auto;
+        margin: auto 0 auto;
+    }
+
+    .levels figcaption {
+        margin: 10px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .aboutDres {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .aboutDres section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .aboutDres section p {
+        display: flex;
+        flex-basis: 50%;
+        margin: 0;
+    }
+
+    .history img {
+        display: flex;
+        height: auto;
+        width: 300px;
+    }
+
+    .modern {
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .modern img {
+        display: flex;
+        width: 300px;
+        height: auto;
+    }
 }

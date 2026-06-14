@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contains a list of dressage terms with their definitions. List is loaded from JavaScript. Also links to USDF website.">
+    <meta name="author" content="Alyssa Stringham">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+    <title>Alyssa's Dressage</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dressage</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" data-title="Home">Home</a></li>
+                <li><a href="terminology.html" data-title="Vocab">Terminology</a></li>
+                <li><a href="movements.html" data-title="Levels">Levels</a></li>
+                <li><a href="contact.html" data-title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="vocab">
+        <h2>Terminology</h2>
+        <p>All of the following terms and definitions are taken directly from the USDF "Glossary of Judging Terms". A
+            full list of terms can be found at their <a href="https://www.usdf.org/">website</a> by searching for
+            "glossary".</p>
+        <div class="vocabulary" id="vocabulary"></div>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> - Alyssa Stringham - Utah -</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

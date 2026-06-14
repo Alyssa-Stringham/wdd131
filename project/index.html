@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contains a breif history of dressage and description of modern dressage. There are two pictures. A description of the website is also provided.">
+    <meta name="author" content="Alyssa Stringham">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/project.css">
+    <script src="scripts/project.js" defer></script>
+
+    <title>Alyssa's Dressage</title>
+</head>
+
+<body>
+    <header>
+        <h1>Dressage</h1>
+        <a id="menu" href="#"></a>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" data-title="Home">Home</a></li>
+                <li><a href="terminology.html" data-title="Vocab">Terminology</a></li>
+                <li><a href="movements.html" data-title="Levels">Levels</a></li>
+                <li><a href="contact.html" data-title="Contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2> Home </h2>
+
+        <div class="aboutDres">
+            <section class="history">
+                <p>The word "Dressage" derives from the french verb "dresser", which means "to train". Xenophon, a
+                    military leader of ancient Greece who lived about 400 B.C., is often considered to be the first
+                    individual to
+                    teach dressage. Dressage at this point was focused primarily on creating a good calvary mount. These
+                    horses were required to be strong, agile, well-balanced, obedient, and brave. The roots of many of
+                    the movements performed in modern dressage are found in calvary horse training. </p>
+                <figure>
+                    <img src="images/dressage1936.webp" alt="1936 Dressage Rider" loading="lazy">
+                    <figcaption>A Dressage Rider at the 1936 Olympics</figcaption>
+                </figure>
+
+            </section>
+
+            <section class="modern">
+
+                <figure>
+                    <img src="images/gold_metal_team_2024.webp" alt="Team Gold Medalists 2024" loading="lazy">
+                    <figcaption>2024 Dressage Team Final Gold Medalists<br>Photo Credit: FEI/ Benjamin Clark
+                    </figcaption>
+                </figure>
+                <p>Dressage debuted as an Olympic sport in 1912, but only military officers were allowed to compete.
+                    In
+                    1953, both women and civilian men were authorized to compete. According to the
+                    F&eacute;d&eacute;ration
+                    &Eacute;questre Internationale (FEI), 30 countries were represented in Dressage in the Summer 2024
+                    Paris
+                    Olympic Games.
+                </p>
+
+            </section>
+        </div>
+        <div class="aboutWeb">
+            <h3>About The Website</h3>
+            <p>This website is about dressage. Below is a breif history and explaination of dressage. There is also a
+                page for common terminology, a page describing some of the levels of dressage, and a page with a contact
+                form.</p>
+            <p>The terminology page uses JavaScript to load a list of terms with definitions. The number of
+                times the contact form is submitted is saved in local storage. All photos have lazy loading. </p>
+        </div>
+    </main>
+    <footer>
+        <p> &copy; <span id="currentyear"></span> - Alyssa Stringham - Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

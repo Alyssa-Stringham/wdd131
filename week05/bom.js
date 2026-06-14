@@ -1,6 +1,6 @@
-const input = document.querySelector('#favchap');
-const button = document.querySelector('button');
-const list = document.querySelector('#list');
+const input = document.querySelector('#favchap'); // input type
+const button = document.querySelector('button'); //submit
+const list = document.querySelector('#list'); // ul 
 // above three establish references to DOM elements used in program; 
 //reference html element objects, not properties 
 const li = document.createElement('li');
